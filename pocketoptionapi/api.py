@@ -6,8 +6,8 @@ from pocketoptionapi.ws.channels.candles import GetCandles
 from pocketoptionapi.ws.channels.buyv3 import *
 from pocketoptionapi.ws.objects.timesync import TimeSync
 from pocketoptionapi.ws.objects.candles import Candles
-import pocketoptionapi.global_value as global_value
-from pocketoptionapi.ws.channels.change_symbol import ChangeSymbol
+import pocketoptionapi.state as state
+from pocketoptionapi.ws.channels.change_symbol import ChangeSymbol, Unsubscribe, Subscribe
 from pocketoptionapi.ws.objects.time_sync import TimeSynchronizer
 
 
@@ -50,32 +50,32 @@ class PocketOptionAPI(object):
         return self.websocket_client
     
     def GetPayoutData(self):
-        return global_value.PayoutData
+        return state.PayoutData
 
     def GetClosedDeals(self):
-        return global_value.closed_deals
+        return state.closed_deals
 
     def send_websocket_request(self, name, msg, request_id="", no_force_send=True):
         # logger = logging.getLogger(__name__)
 
         data = f'42{json.dumps(msg)}'
 
-        while (global_value.ssl_Mutual_exclusion or global_value.ssl_Mutual_exclusion_write) and no_force_send:
+        while (state.ssl_Mutual_exclusion or state.ssl_Mutual_exclusion_write) and no_force_send:
             pass
-        global_value.ssl_Mutual_exclusion_write = True
+        state.ssl_Mutual_exclusion_write = True
 
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
 
         loop.run_until_complete(self.websocket.send_message(data))
 
-        global_value.logger(data, "DEBUG")
-        global_value.ssl_Mutual_exclusion_write = False
+        state.logger(data, "DEBUG")
+        state.ssl_Mutual_exclusion_write = False
 
     def start_websocket(self):
-        global_value.websocket_is_connected = False
-        global_value.check_websocket_if_error = False
-        global_value.websocket_error_reason = None
+        state.websocket_is_connected = False
+        state.check_websocket_if_error = False
+        state.websocket_error_reason = None
 
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
@@ -85,18 +85,18 @@ class PocketOptionAPI(object):
 
         while True:
             try:
-                if global_value.check_websocket_if_error:
-                    return False, global_value.websocket_error_reason
-                if global_value.websocket_is_connected is False:
+                if state.check_websocket_if_error:
+                    return False, state.websocket_error_reason
+                if state.websocket_is_connected is False:
                     return False, "Websocket connection closed."
-                elif global_value.websocket_is_connected is True:
+                elif state.websocket_is_connected is True:
                     return True, None
             except:
                 pass
 
     def connect(self):
-        global_value.ssl_Mutual_exclusion = False
-        global_value.ssl_Mutual_exclusion_write = False
+        state.ssl_Mutual_exclusion = False
+        state.ssl_Mutual_exclusion_write = False
 
         check_websocket, websocket_reason = self.start_websocket()
 
@@ -134,7 +134,15 @@ class PocketOptionAPI(object):
     @property
     def change_symbol(self):
         return ChangeSymbol(self)
-
+    
+    @property
+    def unsubfor(self):
+        return Unsubscribe(self)
+    
+    @property
+    def subfor(self):
+        return Subscribe(self)
+    
     @property
     def synced_datetime(self):
         try:
@@ -142,10 +150,10 @@ class PocketOptionAPI(object):
                 self.sync.synchronize(self.time_sync.server_timestamp)
                 self.sync_datetime = self.sync.get_synced_datetime()
             else:
-                global_value.logger("timesync is not set", "ERROR")
+                state.logger("timesync is not set", "ERROR")
                 self.sync_datetime = None
         except Exception as e:
-            global_value.logger(e, "ERROR")
+            state.logger(e, "ERROR")
             self.sync_datetime = None
 
         return self.sync_datetime

@@ -1,0 +1,1832 @@
+{
+  "#AAPL": {
+    "id": 5,
+    "symbol": "#AAPL",
+    "name": "Apple",
+    "type": "stock",
+    "field4": 2,
+    "field5": 50,
+    "pair_id": 170,
+    "is_otc": false
+  },
+  "#AAPL_otc": {
+    "id": 170,
+    "symbol": "#AAPL_otc",
+    "name": "Apple OTC",
+    "type": "stock",
+    "field4": 3,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "#AXP": {
+    "id": 140,
+    "symbol": "#AXP",
+    "name": "American Express",
+    "type": "stock",
+    "field4": 3,
+    "field5": 50,
+    "pair_id": 291,
+    "is_otc": false
+  },
+  "#AXP_otc": {
+    "id": 291,
+    "symbol": "#AXP_otc",
+    "name": "American Express OTC",
+    "type": "stock",
+    "field4": 3,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "#BA": {
+    "id": 8,
+    "symbol": "#BA",
+    "name": "Boeing Company",
+    "type": "stock",
+    "field4": 2,
+    "field5": 50,
+    "pair_id": 292,
+    "is_otc": false
+  },
+  "#BA_otc": {
+    "id": 292,
+    "symbol": "#BA_otc",
+    "name": "Boeing Company OTC",
+    "type": "stock",
+    "field4": 2,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "#CSCO": {
+    "id": 154,
+    "symbol": "#CSCO",
+    "name": "Cisco",
+    "type": "stock",
+    "field4": 3,
+    "field5": 45,
+    "pair_id": 427,
+    "is_otc": false
+  },
+  "#CSCO_otc": {
+    "id": 427,
+    "symbol": "#CSCO_otc",
+    "name": "Cisco OTC",
+    "type": "stock",
+    "field4": 3,
+    "field5": 20,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "#FB": {
+    "id": 177,
+    "symbol": "#FB",
+    "name": "FACEBOOK INC",
+    "type": "stock",
+    "field4": 2,
+    "field5": 50,
+    "pair_id": 187,
+    "is_otc": false
+  },
+  "#FB_otc": {
+    "id": 187,
+    "symbol": "#FB_otc",
+    "name": "FACEBOOK INC OTC",
+    "type": "stock",
+    "field4": 2,
+    "field5": 73,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "#INTC": {
+    "id": 180,
+    "symbol": "#INTC",
+    "name": "Intel",
+    "type": "stock",
+    "field4": 2,
+    "field5": 25,
+    "pair_id": 190,
+    "is_otc": false
+  },
+  "#INTC_otc": {
+    "id": 190,
+    "symbol": "#INTC_otc",
+    "name": "Intel OTC",
+    "type": "stock",
+    "field4": 3,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "#JNJ": {
+    "id": 144,
+    "symbol": "#JNJ",
+    "name": "Johnson & Johnson",
+    "type": "stock",
+    "field4": 3,
+    "field5": 50,
+    "pair_id": 296,
+    "is_otc": false
+  },
+  "#JNJ_otc": {
+    "id": 296,
+    "symbol": "#JNJ_otc",
+    "name": "Johnson & Johnson OTC",
+    "type": "stock",
+    "field4": 3,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "#JPM": {
+    "id": 20,
+    "symbol": "#JPM",
+    "name": "JPMorgan Chase & Co",
+    "type": "stock",
+    "field4": 2,
+    "field5": 50,
+    "pair_id": 295,
+    "is_otc": false
+  },
+  "#MCD": {
+    "id": 23,
+    "symbol": "#MCD",
+    "name": "McDonald's",
+    "type": "stock",
+    "field4": 2,
+    "field5": 43,
+    "pair_id": 175,
+    "is_otc": false
+  },
+  "#MCD_otc": {
+    "id": 175,
+    "symbol": "#MCD_otc",
+    "name": "McDonald's OTC",
+    "type": "stock",
+    "field4": 3,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "#MSFT": {
+    "id": 24,
+    "symbol": "#MSFT",
+    "name": "Microsoft",
+    "type": "stock",
+    "field4": 2,
+    "field5": 50,
+    "pair_id": 176,
+    "is_otc": false
+  },
+  "#MSFT_otc": {
+    "id": 176,
+    "symbol": "#MSFT_otc",
+    "name": "Microsoft OTC",
+    "type": "stock",
+    "field4": 3,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "#PFE": {
+    "id": 147,
+    "symbol": "#PFE",
+    "name": "Pfizer Inc",
+    "type": "stock",
+    "field4": 2,
+    "field5": 50,
+    "pair_id": 297,
+    "is_otc": false
+  },
+  "#PFE_otc": {
+    "id": 297,
+    "symbol": "#PFE_otc",
+    "name": "Pfizer Inc OTC",
+    "type": "stock",
+    "field4": 4,
+    "field5": 20,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "#TSLA": {
+    "id": 186,
+    "symbol": "#TSLA",
+    "name": "Tesla",
+    "type": "stock",
+    "field4": 2,
+    "field5": 50,
+    "pair_id": 196,
+    "is_otc": false
+  },
+  "#TSLA_otc": {
+    "id": 196,
+    "symbol": "#TSLA_otc",
+    "name": "Tesla OTC",
+    "type": "stock",
+    "field4": 2,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "#XOM": {
+    "id": 153,
+    "symbol": "#XOM",
+    "name": "ExxonMobil",
+    "type": "stock",
+    "field4": 3,
+    "field5": 45,
+    "pair_id": 426,
+    "is_otc": false
+  },
+  "#XOM_otc": {
+    "id": 426,
+    "symbol": "#XOM_otc",
+    "name": "ExxonMobil OTC",
+    "type": "stock",
+    "field4": 3,
+    "field5": 88,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "100GBP": {
+    "id": 315,
+    "symbol": "100GBP",
+    "name": "100GBP",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 403,
+    "is_otc": false
+  },
+  "100GBP_otc": {
+    "id": 403,
+    "symbol": "100GBP_otc",
+    "name": "100GBP OTC",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "ADA-USD_otc": {
+    "id": 473,
+    "symbol": "ADA-USD_otc",
+    "name": "Cardano OTC",
+    "type": "cryptocurrency",
+    "field4": 6,
+    "field5": 89,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "AEDCNY_otc": {
+    "id": 538,
+    "symbol": "AEDCNY_otc",
+    "name": "AED/CNY OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 79,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "AEX25": {
+    "id": 449,
+    "symbol": "AEX25",
+    "name": "AEX 25",
+    "type": "index",
+    "field4": 2,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": false
+  },
+  "AMD_otc": {
+    "id": 568,
+    "symbol": "AMD_otc",
+    "name": "Advanced Micro Devices OTC",
+    "type": "stock",
+    "field4": 4,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "AMZN_otc": {
+    "id": 412,
+    "symbol": "AMZN_otc",
+    "name": "Amazon OTC",
+    "type": "stock",
+    "field4": 2,
+    "field5": 71,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "AUDCAD": {
+    "id": 36,
+    "symbol": "AUDCAD",
+    "name": "AUD/CAD",
+    "type": "currency",
+    "field4": 5,
+    "field5": 55,
+    "pair_id": 67,
+    "is_otc": true
+  },
+  "AUDCAD_otc": {
+    "id": 67,
+    "symbol": "AUDCAD_otc",
+    "name": "AUD/CAD OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "AUDCHF": {
+    "id": 37,
+    "symbol": "AUDCHF",
+    "name": "AUD/CHF",
+    "type": "currency",
+    "field4": 5,
+    "field5": 49,
+    "pair_id": 68,
+    "is_otc": true
+  },
+  "AUDCHF_otc": {
+    "id": 68,
+    "symbol": "AUDCHF_otc",
+    "name": "AUD/CHF OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 76,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "AUDJPY": {
+    "id": 38,
+    "symbol": "AUDJPY",
+    "name": "AUD/JPY",
+    "type": "currency",
+    "field4": 3,
+    "field5": 86,
+    "pair_id": 69,
+    "is_otc": true
+  },
+  "AUDJPY_otc": {
+    "id": 69,
+    "symbol": "AUDJPY_otc",
+    "name": "AUD/JPY OTC",
+    "type": "currency",
+    "field4": 3,
+    "field5": 82,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "AUDNZD_otc": {
+    "id": 70,
+    "symbol": "AUDNZD_otc",
+    "name": "AUD/NZD OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 76,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "AUDUSD": {
+    "id": 40,
+    "symbol": "AUDUSD",
+    "name": "AUD/USD",
+    "type": "currency",
+    "field4": 5,
+    "field5": 70,
+    "pair_id": 71,
+    "is_otc": true
+  },
+  "AUDUSD_otc": {
+    "id": 71,
+    "symbol": "AUDUSD_otc",
+    "name": "AUD/USD OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 84,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "AUS200": {
+    "id": 305,
+    "symbol": "AUS200",
+    "name": "AUS 200",
+    "type": "index",
+    "field4": 2,
+    "field5": 37,
+    "pair_id": 306,
+    "is_otc": false
+  },
+  "AUS200_otc": {
+    "id": 306,
+    "symbol": "AUS200_otc",
+    "name": "AUS 200 OTC",
+    "type": "index",
+    "field4": 2,
+    "field5": 67,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "AVAX_otc": {
+    "id": 481,
+    "symbol": "AVAX_otc",
+    "name": "Avalanche OTC",
+    "type": "cryptocurrency",
+    "field4": 5,
+    "field5": 20,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "BABA": {
+    "id": 183,
+    "symbol": "BABA",
+    "name": "Alibaba",
+    "type": "stock",
+    "field4": 2,
+    "field5": 50,
+    "pair_id": 428,
+    "is_otc": false
+  },
+  "BABA_otc": {
+    "id": 428,
+    "symbol": "BABA_otc",
+    "name": "Alibaba OTC",
+    "type": "stock",
+    "field4": 3,
+    "field5": 37,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "BCHEUR": {
+    "id": 450,
+    "symbol": "BCHEUR",
+    "name": "BCH/EUR",
+    "type": "cryptocurrency",
+    "field4": 2,
+    "field5": 15,
+    "pair_id": 0,
+    "is_otc": false
+  },
+  "BCHGBP": {
+    "id": 451,
+    "symbol": "BCHGBP",
+    "name": "BCH/GBP",
+    "type": "cryptocurrency",
+    "field4": 2,
+    "field5": 15,
+    "pair_id": 0,
+    "is_otc": false
+  },
+  "BCHJPY": {
+    "id": 452,
+    "symbol": "BCHJPY",
+    "name": "BCH/JPY",
+    "type": "cryptocurrency",
+    "field4": 0,
+    "field5": 15,
+    "pair_id": 0,
+    "is_otc": false
+  },
+  "BHDCNY_otc": {
+    "id": 536,
+    "symbol": "BHDCNY_otc",
+    "name": "BHD/CNY OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 68,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "BITB_otc": {
+    "id": 494,
+    "symbol": "BITB_otc",
+    "name": "Bitcoin ETF OTC",
+    "type": "cryptocurrency",
+    "field4": 5,
+    "field5": 90,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "BNB-USD_otc": {
+    "id": 470,
+    "symbol": "BNB-USD_otc",
+    "name": "BNB OTC",
+    "type": "cryptocurrency",
+    "field4": 4,
+    "field5": 81,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "BTCGBP": {
+    "id": 453,
+    "symbol": "BTCGBP",
+    "name": "BTC/GBP",
+    "type": "cryptocurrency",
+    "field4": 2,
+    "field5": 15,
+    "pair_id": 0,
+    "is_otc": false
+  },
+  "BTCJPY": {
+    "id": 454,
+    "symbol": "BTCJPY",
+    "name": "BTC/JPY",
+    "type": "cryptocurrency",
+    "field4": 2,
+    "field5": 15,
+    "pair_id": 0,
+    "is_otc": false
+  },
+  "BTCUSD": {
+    "id": 197,
+    "symbol": "BTCUSD",
+    "name": "Bitcoin",
+    "type": "cryptocurrency",
+    "field4": 2,
+    "field5": 15,
+    "pair_id": 484,
+    "is_otc": true
+  },
+  "BTCUSD_otc": {
+    "id": 484,
+    "symbol": "BTCUSD_otc",
+    "name": "Bitcoin OTC",
+    "type": "cryptocurrency",
+    "field4": 3,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "CAC40": {
+    "id": 455,
+    "symbol": "CAC40",
+    "name": "CAC 40",
+    "type": "index",
+    "field4": 2,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "CADCHF": {
+    "id": 41,
+    "symbol": "CADCHF",
+    "name": "CAD/CHF",
+    "type": "currency",
+    "field4": 5,
+    "field5": 84,
+    "pair_id": 72,
+    "is_otc": true
+  },
+  "CADCHF_otc": {
+    "id": 72,
+    "symbol": "CADCHF_otc",
+    "name": "CAD/CHF OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "CADJPY": {
+    "id": 42,
+    "symbol": "CADJPY",
+    "name": "CAD/JPY",
+    "type": "currency",
+    "field4": 3,
+    "field5": 80,
+    "pair_id": 73,
+    "is_otc": true
+  },
+  "CADJPY_otc": {
+    "id": 73,
+    "symbol": "CADJPY_otc",
+    "name": "CAD/JPY OTC",
+    "type": "currency",
+    "field4": 3,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "CHFJPY": {
+    "id": 43,
+    "symbol": "CHFJPY",
+    "name": "CHF/JPY",
+    "type": "currency",
+    "field4": 3,
+    "field5": 85,
+    "pair_id": 74,
+    "is_otc": true
+  },
+  "CHFJPY_otc": {
+    "id": 74,
+    "symbol": "CHFJPY_otc",
+    "name": "CHF/JPY OTC",
+    "type": "currency",
+    "field4": 3,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "CHFNOK_otc": {
+    "id": 457,
+    "symbol": "CHFNOK_otc",
+    "name": "CHF/NOK OTC",
+    "type": "currency",
+    "field4": 3,
+    "field5": 87,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "CITI": {
+    "id": 326,
+    "symbol": "CITI",
+    "name": "Citigroup Inc",
+    "type": "stock",
+    "field4": 2,
+    "field5": 50,
+    "pair_id": 413,
+    "is_otc": false
+  },
+  "CITI_otc": {
+    "id": 413,
+    "symbol": "CITI_otc",
+    "name": "Citigroup Inc OTC",
+    "type": "stock",
+    "field4": 3,
+    "field5": 52,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "COIN_otc": {
+    "id": 570,
+    "symbol": "COIN_otc",
+    "name": "Coinbase Global OTC",
+    "type": "stock",
+    "field4": 4,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "D30EUR": {
+    "id": 318,
+    "symbol": "D30EUR",
+    "name": "D30/EUR",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 406,
+    "is_otc": false
+  },
+  "D30EUR_otc": {
+    "id": 406,
+    "symbol": "D30EUR_otc",
+    "name": "D30EUR OTC",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "DASH_USD": {
+    "id": 209,
+    "symbol": "DASH_USD",
+    "name": "Dash",
+    "type": "cryptocurrency",
+    "field4": 2,
+    "field5": 25,
+    "pair_id": 0,
+    "is_otc": false
+  },
+  "DJI30": {
+    "id": 322,
+    "symbol": "DJI30",
+    "name": "DJI30",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 409,
+    "is_otc": false
+  },
+  "DJI30_otc": {
+    "id": 409,
+    "symbol": "DJI30_otc",
+    "name": "DJI30 OTC",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "DOGE_otc": {
+    "id": 485,
+    "symbol": "DOGE_otc",
+    "name": "Dogecoin OTC",
+    "type": "cryptocurrency",
+    "field4": 6,
+    "field5": 80,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "DOTUSD_otc": {
+    "id": 486,
+    "symbol": "DOTUSD_otc",
+    "name": "Polkadot OTC",
+    "type": "cryptocurrency",
+    "field4": 4,
+    "field5": 77,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "E35EUR": {
+    "id": 314,
+    "symbol": "E35EUR",
+    "name": "E35EUR",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 402,
+    "is_otc": true
+  },
+  "E35EUR_otc": {
+    "id": 402,
+    "symbol": "E35EUR_otc",
+    "name": "E35EUR OTC",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "E50EUR": {
+    "id": 319,
+    "symbol": "E50EUR",
+    "name": "E50/EUR",
+    "type": "index",
+    "field4": 2,
+    "field5": 45,
+    "pair_id": 407,
+    "is_otc": false
+  },
+  "E50EUR_otc": {
+    "id": 407,
+    "symbol": "E50EUR_otc",
+    "name": "E50EUR OTC",
+    "type": "index",
+    "field4": 2,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "ETHUSD": {
+    "id": 272,
+    "symbol": "ETHUSD",
+    "name": "Ethereum",
+    "type": "cryptocurrency",
+    "field4": 2,
+    "field5": 40,
+    "pair_id": 487,
+    "is_otc": false
+  },
+  "ETHUSD_otc": {
+    "id": 487,
+    "symbol": "ETHUSD_otc",
+    "name": "Ethereum OTC",
+    "type": "cryptocurrency",
+    "field4": 3,
+    "field5": 57,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "EURAUD": {
+    "id": 44,
+    "symbol": "EURAUD",
+    "name": "EUR/AUD",
+    "type": "currency",
+    "field4": 5,
+    "field5": 73,
+    "pair_id": 75,
+    "is_otc": true
+  },
+  "EURCAD": {
+    "id": 45,
+    "symbol": "EURCAD",
+    "name": "EUR/CAD",
+    "type": "currency",
+    "field4": 5,
+    "field5": 82,
+    "pair_id": 76,
+    "is_otc": true
+  },
+  "EURCHF": {
+    "id": 46,
+    "symbol": "EURCHF",
+    "name": "EUR/CHF",
+    "type": "currency",
+    "field4": 5,
+    "field5": 85,
+    "pair_id": 77,
+    "is_otc": true
+  },
+  "EURCHF_otc": {
+    "id": 77,
+    "symbol": "EURCHF_otc",
+    "name": "EUR/CHF OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 39,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "EURGBP": {
+    "id": 47,
+    "symbol": "EURGBP",
+    "name": "EUR/GBP",
+    "type": "currency",
+    "field4": 5,
+    "field5": 37,
+    "pair_id": 78,
+    "is_otc": true
+  },
+  "EURGBP_otc": {
+    "id": 78,
+    "symbol": "EURGBP_otc",
+    "name": "EUR/GBP OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "EURHUF_otc": {
+    "id": 460,
+    "symbol": "EURHUF_otc",
+    "name": "EUR/HUF OTC",
+    "type": "currency",
+    "field4": 3,
+    "field5": 91,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "EURJPY": {
+    "id": 48,
+    "symbol": "EURJPY",
+    "name": "EUR/JPY",
+    "type": "currency",
+    "field4": 3,
+    "field5": 70,
+    "pair_id": 79,
+    "is_otc": true
+  },
+  "EURJPY_otc": {
+    "id": 79,
+    "symbol": "EURJPY_otc",
+    "name": "EUR/JPY OTC",
+    "type": "currency",
+    "field4": 3,
+    "field5": 20,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "EURNZD_otc": {
+    "id": 80,
+    "symbol": "EURNZD_otc",
+    "name": "EUR/NZD OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "EURRUB_otc": {
+    "id": 200,
+    "symbol": "EURRUB_otc",
+    "name": "EUR/RUB OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 38,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "EURTRY_otc": {
+    "id": 468,
+    "symbol": "EURTRY_otc",
+    "name": "EUR/TRY OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "EURUSD": {
+    "id": 1,
+    "symbol": "EURUSD",
+    "name": "EUR/USD",
+    "type": "currency",
+    "field4": 5,
+    "field5": 78,
+    "pair_id": 66,
+    "is_otc": true
+  },
+  "EURUSD_otc": {
+    "id": 66,
+    "symbol": "EURUSD_otc",
+    "name": "EUR/USD OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "F40EUR": {
+    "id": 316,
+    "symbol": "F40EUR",
+    "name": "F40/EUR",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 404,
+    "is_otc": false
+  },
+  "F40EUR_otc": {
+    "id": 404,
+    "symbol": "F40EUR_otc",
+    "name": "F40EUR OTC",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "FDX_otc": {
+    "id": 414,
+    "symbol": "FDX_otc",
+    "name": "FedEx OTC",
+    "type": "stock",
+    "field4": 2,
+    "field5": 54,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "GBPAUD": {
+    "id": 51,
+    "symbol": "GBPAUD",
+    "name": "GBP/AUD",
+    "type": "currency",
+    "field4": 5,
+    "field5": 32,
+    "pair_id": 81,
+    "is_otc": true
+  },
+  "GBPAUD_otc": {
+    "id": 81,
+    "symbol": "GBPAUD_otc",
+    "name": "GBP/AUD OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "GBPCAD": {
+    "id": 52,
+    "symbol": "GBPCAD",
+    "name": "GBP/CAD",
+    "type": "currency",
+    "field4": 5,
+    "field5": 73,
+    "pair_id": 82,
+    "is_otc": true
+  },
+  "GBPCHF": {
+    "id": 53,
+    "symbol": "GBPCHF",
+    "name": "GBP/CHF",
+    "type": "currency",
+    "field4": 5,
+    "field5": 49,
+    "pair_id": 83,
+    "is_otc": true
+  },
+  "GBPJPY": {
+    "id": 54,
+    "symbol": "GBPJPY",
+    "name": "GBP/JPY",
+    "type": "currency",
+    "field4": 3,
+    "field5": 52,
+    "pair_id": 84,
+    "is_otc": true
+  },
+  "GBPJPY_otc": {
+    "id": 84,
+    "symbol": "GBPJPY_otc",
+    "name": "GBP/JPY OTC",
+    "type": "currency",
+    "field4": 3,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "GBPUSD": {
+    "id": 56,
+    "symbol": "GBPUSD",
+    "name": "GBP/USD",
+    "type": "currency",
+    "field4": 5,
+    "field5": 87,
+    "pair_id": 86,
+    "is_otc": true
+  },
+  "GBPUSD_otc": {
+    "id": 86,
+    "symbol": "GBPUSD_otc",
+    "name": "GBP/USD OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 20,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "GME_otc": {
+    "id": 566,
+    "symbol": "GME_otc",
+    "name": "GameStop Corp OTC",
+    "type": "stock",
+    "field4": 4,
+    "field5": 83,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "H33HKD": {
+    "id": 463,
+    "symbol": "H33HKD",
+    "name": "HONG KONG 33",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": false
+  },
+  "IRRUSD_otc": {
+    "id": 548,
+    "symbol": "IRRUSD_otc",
+    "name": "IRR/USD OTC",
+    "type": "currency",
+    "field4": 10,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "JODCNY_otc": {
+    "id": 546,
+    "symbol": "JODCNY_otc",
+    "name": "JOD/CNY OTC",
+    "type": "currency",
+    "field4": 6,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "JPN225": {
+    "id": 317,
+    "symbol": "JPN225",
+    "name": "JPN225",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 405,
+    "is_otc": false
+  },
+  "JPN225_otc": {
+    "id": 405,
+    "symbol": "JPN225_otc",
+    "name": "JPN225 OTC",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "KESUSD_otc": {
+    "id": 554,
+    "symbol": "KESUSD_otc",
+    "name": "KES/USD OTC",
+    "type": "currency",
+    "field4": 7,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "LBPUSD_otc": {
+    "id": 530,
+    "symbol": "LBPUSD_otc",
+    "name": "LBP/USD OTC",
+    "type": "currency",
+    "field4": 9,
+    "field5": 69,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "LINK_otc": {
+    "id": 478,
+    "symbol": "LINK_otc",
+    "name": "Chainlink OTC",
+    "type": "cryptocurrency",
+    "field4": 4,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "LNKUSD": {
+    "id": 464,
+    "symbol": "LNKUSD",
+    "name": "Chainlink",
+    "type": "cryptocurrency",
+    "field4": 4,
+    "field5": 15,
+    "pair_id": 0,
+    "is_otc": false
+  },
+  "LTCUSD_otc": {
+    "id": 488,
+    "symbol": "LTCUSD_otc",
+    "name": "Litecoin OTC",
+    "type": "cryptocurrency",
+    "field4": 4,
+    "field5": 66,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "MADUSD_otc": {
+    "id": 534,
+    "symbol": "MADUSD_otc",
+    "name": "MAD/USD OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 64,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "MARA_otc": {
+    "id": 572,
+    "symbol": "MARA_otc",
+    "name": "Marathon Digital Holdings OTC",
+    "type": "stock",
+    "field4": 5,
+    "field5": 77,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "MATIC_otc": {
+    "id": 491,
+    "symbol": "MATIC_otc",
+    "name": "Polygon OTC",
+    "type": "cryptocurrency",
+    "field4": 6,
+    "field5": 73,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "NASUSD": {
+    "id": 323,
+    "symbol": "NASUSD",
+    "name": "US100",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 410,
+    "is_otc": true
+  },
+  "NASUSD_otc": {
+    "id": 410,
+    "symbol": "NASUSD_otc",
+    "name": "US100 OTC",
+    "type": "index",
+    "field4": 1,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "NFLX": {
+    "id": 182,
+    "symbol": "NFLX",
+    "name": "Netflix",
+    "type": "stock",
+    "field4": 2,
+    "field5": 50,
+    "pair_id": 192,
+    "is_otc": false
+  },
+  "NFLX_otc": {
+    "id": 429,
+    "symbol": "NFLX_otc",
+    "name": "Netflix OTC",
+    "type": "stock",
+    "field4": 2,
+    "field5": 88,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "NGNUSD_otc": {
+    "id": 552,
+    "symbol": "NGNUSD_otc",
+    "name": "NGN/USD OTC",
+    "type": "currency",
+    "field4": 8,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "NZDJPY_otc": {
+    "id": 89,
+    "symbol": "NZDJPY_otc",
+    "name": "NZD/JPY OTC",
+    "type": "currency",
+    "field4": 3,
+    "field5": 35,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "NZDUSD_otc": {
+    "id": 90,
+    "symbol": "NZDUSD_otc",
+    "name": "NZD/USD OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 84,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "OMRCNY_otc": {
+    "id": 544,
+    "symbol": "OMRCNY_otc",
+    "name": "OMR/CNY OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 55,
+    "pair_id": 0,
+    "is_otc": false
+  },
+  "PLTR_otc": {
+    "id": 562,
+    "symbol": "PLTR_otc",
+    "name": "Palantir Technologies OTC",
+    "type": "stock",
+    "field4": 4,
+    "field5": 21,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "QARCNY_otc": {
+    "id": 542,
+    "symbol": "QARCNY_otc",
+    "name": "QAR/CNY OTC",
+    "type": "currency",
+    "field4": 6,
+    "field5": 82,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "SARCNY_otc": {
+    "id": 540,
+    "symbol": "SARCNY_otc",
+    "name": "SAR/CNY OTC",
+    "type": "currency",
+    "field4": 6,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "SMI20": {
+    "id": 466,
+    "symbol": "SMI20",
+    "name": "SMI 20",
+    "type": "index",
+    "field4": 2,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "SOL-USD_otc": {
+    "id": 472,
+    "symbol": "SOL-USD_otc",
+    "name": "Solana OTC",
+    "type": "cryptocurrency",
+    "field4": 5,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "SP500": {
+    "id": 321,
+    "symbol": "SP500",
+    "name": "SP500",
+    "type": "index",
+    "field4": 2,
+    "field5": 45,
+    "pair_id": 408,
+    "is_otc": true
+  },
+  "SP500_otc": {
+    "id": 408,
+    "symbol": "SP500_otc",
+    "name": "SP500 OTC",
+    "type": "index",
+    "field4": 2,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "SYPUSD_otc": {
+    "id": 550,
+    "symbol": "SYPUSD_otc",
+    "name": "SYP/USD OTC",
+    "type": "currency",
+    "field4": 9,
+    "field5": 62,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "TNDUSD_otc": {
+    "id": 532,
+    "symbol": "TNDUSD_otc",
+    "name": "TND/USD OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 85,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "TON-USD_otc": {
+    "id": 480,
+    "symbol": "TON-USD_otc",
+    "name": "Toncoin OTC",
+    "type": "cryptocurrency",
+    "field4": 6,
+    "field5": 66,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "TRX-USD_otc": {
+    "id": 476,
+    "symbol": "TRX-USD_otc",
+    "name": "TRON OTC",
+    "type": "cryptocurrency",
+    "field4": 6,
+    "field5": 81,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "UAHUSD_otc": {
+    "id": 558,
+    "symbol": "UAHUSD_otc",
+    "name": "UAH/USD OTC",
+    "type": "currency",
+    "field4": 6,
+    "field5": 35,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "UKBrent": {
+    "id": 50,
+    "symbol": "UKBrent",
+    "name": "Brent Oil",
+    "type": "commodity",
+    "field4": 3,
+    "field5": 50,
+    "pair_id": 164,
+    "is_otc": false
+  },
+  "UKBrent_otc": {
+    "id": 164,
+    "symbol": "UKBrent_otc",
+    "name": "Brent Oil OTC",
+    "type": "commodity",
+    "field4": 3,
+    "field5": 80,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USCrude": {
+    "id": 64,
+    "symbol": "USCrude",
+    "name": "WTI Crude Oil",
+    "type": "commodity",
+    "field4": 3,
+    "field5": 50,
+    "pair_id": 165,
+    "is_otc": false
+  },
+  "USCrude_otc": {
+    "id": 165,
+    "symbol": "USCrude_otc",
+    "name": "WTI Crude Oil OTC",
+    "type": "commodity",
+    "field4": 3,
+    "field5": 80,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDARS_otc": {
+    "id": 506,
+    "symbol": "USDARS_otc",
+    "name": "USD/ARS OTC",
+    "type": "currency",
+    "field4": 2,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDBDT_otc": {
+    "id": 500,
+    "symbol": "USDBDT_otc",
+    "name": "USD/BDT OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDBRL_otc": {
+    "id": 502,
+    "symbol": "USDBRL_otc",
+    "name": "USD/BRL OTC",
+    "type": "currency",
+    "field4": 4,
+    "field5": 63,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDCAD": {
+    "id": 61,
+    "symbol": "USDCAD",
+    "name": "USD/CAD",
+    "type": "currency",
+    "field4": 5,
+    "field5": 64,
+    "pair_id": 91,
+    "is_otc": true
+  },
+  "USDCAD_otc": {
+    "id": 91,
+    "symbol": "USDCAD_otc",
+    "name": "USD/CAD OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 58,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDCHF": {
+    "id": 62,
+    "symbol": "USDCHF",
+    "name": "USD/CHF",
+    "type": "currency",
+    "field4": 5,
+    "field5": 83,
+    "pair_id": 92,
+    "is_otc": true
+  },
+  "USDCHF_otc": {
+    "id": 92,
+    "symbol": "USDCHF_otc",
+    "name": "USD/CHF OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 58,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDCLP_otc": {
+    "id": 525,
+    "symbol": "USDCLP_otc",
+    "name": "USD/CLP OTC",
+    "type": "currency",
+    "field4": 4,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDCNH_otc": {
+    "id": 467,
+    "symbol": "USDCNH_otc",
+    "name": "USD/CNH OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 54,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDCOP_otc": {
+    "id": 515,
+    "symbol": "USDCOP_otc",
+    "name": "USD/COP OTC",
+    "type": "currency",
+    "field4": 2,
+    "field5": 34,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDDZD_otc": {
+    "id": 508,
+    "symbol": "USDDZD_otc",
+    "name": "USD/DZD OTC",
+    "type": "currency",
+    "field4": 3,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDEGP_otc": {
+    "id": 513,
+    "symbol": "USDEGP_otc",
+    "name": "USD/EGP OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 59,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDIDR_otc": {
+    "id": 504,
+    "symbol": "USDIDR_otc",
+    "name": "USD/IDR OTC",
+    "type": "currency",
+    "field4": 1,
+    "field5": 62,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDINR_otc": {
+    "id": 202,
+    "symbol": "USDINR_otc",
+    "name": "USD/INR OTC",
+    "type": "currency",
+    "field4": 4,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDJPY": {
+    "id": 63,
+    "symbol": "USDJPY",
+    "name": "USD/JPY",
+    "type": "currency",
+    "field4": 3,
+    "field5": 68,
+    "pair_id": 93,
+    "is_otc": true
+  },
+  "USDJPY_otc": {
+    "id": 93,
+    "symbol": "USDJPY_otc",
+    "name": "USD/JPY OTC",
+    "type": "currency",
+    "field4": 3,
+    "field5": 66,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDMXN_otc": {
+    "id": 509,
+    "symbol": "USDMXN_otc",
+    "name": "USD/MXN OTC",
+    "type": "currency",
+    "field4": 4,
+    "field5": 57,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDMYR_otc": {
+    "id": 523,
+    "symbol": "USDMYR_otc",
+    "name": "USD/MYR OTC",
+    "type": "currency",
+    "field4": 6,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDPHP_otc": {
+    "id": 511,
+    "symbol": "USDPHP_otc",
+    "name": "USD/PHP OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 80,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDPKR_otc": {
+    "id": 517,
+    "symbol": "USDPKR_otc",
+    "name": "USD/PKR OTC",
+    "type": "currency",
+    "field4": 3,
+    "field5": 69,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDRUB_otc": {
+    "id": 199,
+    "symbol": "USDRUB_otc",
+    "name": "USD/RUB OTC",
+    "type": "currency",
+    "field4": 4,
+    "field5": 68,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDSGD_otc": {
+    "id": 526,
+    "symbol": "USDSGD_otc",
+    "name": "USD/SGD OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 28,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDTHB_otc": {
+    "id": 521,
+    "symbol": "USDTHB_otc",
+    "name": "USD/THB OTC",
+    "type": "currency",
+    "field4": 5,
+    "field5": 84,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "USDVND_otc": {
+    "id": 519,
+    "symbol": "USDVND_otc",
+    "name": "USD/VND OTC",
+    "type": "currency",
+    "field4": 1,
+    "field5": 80,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "VISA_otc": {
+    "id": 416,
+    "symbol": "VISA_otc",
+    "name": "VISA OTC",
+    "type": "stock",
+    "field4": 2,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "VIX_otc": {
+    "id": 560,
+    "symbol": "VIX_otc",
+    "name": "VIX OTC",
+    "type": "stock",
+    "field4": 4,
+    "field5": 20,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "XAGEUR": {
+    "id": 103,
+    "symbol": "XAGEUR",
+    "name": "XAG/EUR",
+    "type": "commodity",
+    "field4": 3,
+    "field5": 50,
+    "pair_id": 166,
+    "is_otc": false
+  },
+  "XAGUSD": {
+    "id": 65,
+    "symbol": "XAGUSD",
+    "name": "Silver",
+    "type": "commodity",
+    "field4": 3,
+    "field5": 50,
+    "pair_id": 167,
+    "is_otc": false
+  },
+  "XAGUSD_otc": {
+    "id": 167,
+    "symbol": "XAGUSD_otc",
+    "name": "Silver OTC",
+    "type": "commodity",
+    "field4": 4,
+    "field5": 80,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "XAUEUR": {
+    "id": 102,
+    "symbol": "XAUEUR",
+    "name": "XAU/EUR",
+    "type": "commodity",
+    "field4": 3,
+    "field5": 50,
+    "pair_id": 168,
+    "is_otc": false
+  },
+  "XAUUSD": {
+    "id": 2,
+    "symbol": "XAUUSD",
+    "name": "Gold",
+    "type": "commodity",
+    "field4": 3,
+    "field5": 50,
+    "pair_id": 169,
+    "is_otc": false
+  },
+  "XAUUSD_otc": {
+    "id": 169,
+    "symbol": "XAUUSD_otc",
+    "name": "Gold OTC",
+    "type": "commodity",
+    "field4": 3,
+    "field5": 80,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "XNGUSD": {
+    "id": 311,
+    "symbol": "XNGUSD",
+    "name": "Natural Gas",
+    "type": "commodity",
+    "field4": 3,
+    "field5": 45,
+    "pair_id": 399,
+    "is_otc": false
+  },
+  "XNGUSD_otc": {
+    "id": 399,
+    "symbol": "XNGUSD_otc",
+    "name": "Natural Gas OTC",
+    "type": "commodity",
+    "field4": 4,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "XPDUSD": {
+    "id": 313,
+    "symbol": "XPDUSD",
+    "name": "Palladium spot",
+    "type": "commodity",
+    "field4": 2,
+    "field5": 45,
+    "pair_id": 401,
+    "is_otc": false
+  },
+  "XPDUSD_otc": {
+    "id": 401,
+    "symbol": "XPDUSD_otc",
+    "name": "Palladium spot OTC",
+    "type": "commodity",
+    "field4": 2,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "XPTUSD": {
+    "id": 312,
+    "symbol": "XPTUSD",
+    "name": "Platinum spot",
+    "type": "commodity",
+    "field4": 2,
+    "field5": 45,
+    "pair_id": 400,
+    "is_otc": false
+  },
+  "XPTUSD_otc": {
+    "id": 400,
+    "symbol": "XPTUSD_otc",
+    "name": "Platinum spot OTC",
+    "type": "commodity",
+    "field4": 2,
+    "field5": 45,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "YERUSD_otc": {
+    "id": 528,
+    "symbol": "YERUSD_otc",
+    "name": "YER/USD OTC",
+    "type": "currency",
+    "field4": 7,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  },
+  "ZARUSD_otc": {
+    "id": 556,
+    "symbol": "ZARUSD_otc",
+    "name": "ZAR/USD OTC",
+    "type": "currency",
+    "field4": 6,
+    "field5": 92,
+    "pair_id": 0,
+    "is_otc": true
+  }
+}

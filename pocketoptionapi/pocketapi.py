@@ -3,7 +3,7 @@ from datetime import datetime
 from tzlocal import get_localzone
 from pocketoptionapi.api import PocketOptionAPI
 import pocketoptionapi.constants as OP_code
-import pocketoptionapi.global_value as global_value
+import pocketoptionapi.state as state
 from collections import defaultdict
 from collections import deque
 import pandas as pd
@@ -13,7 +13,7 @@ local_zone_name = get_localzone()
 # logger = logging.getLogger(__name__)
 
 def get_balance():
-    return global_value.balance
+    return state.balance
 
 class PocketOption:
     __version__ = "1.0.0"
@@ -21,9 +21,9 @@ class PocketOption:
     def __init__(self, ssid, demo):
         self.size = [1, 5, 10, 15, 30, 60, 120, 300, 600, 900, 1800,
                      3600, 7200, 14400, 28800, 43200, 86400, 604800, 2592000]
-        global_value.SSID = ssid
-        global_value.DEMO = demo
-        global_value.logger("Modo Demo: %s" % str(demo), "INFO")
+        state.SSID = ssid
+        state.DEMO = demo
+        state.logger("Modo Demo: %s" % str(demo), "INFO")
         self.suspend = 0.5
         self.thread = None
         self.subscribe_candle = []
@@ -68,14 +68,14 @@ class PocketOption:
         
     def disconnect(self):
         try:
-            if global_value.websocket_is_connected:
+            if state.websocket_is_connected:
                 asyncio.run(self.api.close())
-                global_value.websocket_is_connected = False
+                state.websocket_is_connected = False
                 # logger.debug("WebSocket connection closed successfully.")
-                global_value.logger("WebSocket connection closed successfully.", "DEBUG")
+                state.logger("WebSocket connection closed successfully.", "DEBUG")
             else:
                 # logger.debug("WebSocket was not connected.")
-                global_value.logger("WebSocket was not connected.", "DEBUG")
+                state.logger("WebSocket was not connected.", "DEBUG")
 
             if self.loop is not None:
                 for task in asyncio.all_tasks(self.loop):
@@ -85,16 +85,16 @@ class PocketOption:
                     self.loop.stop()
                     self.loop.close()
                     # logger.debug("Event loop stopped and closed successfully.")
-                    global_value.logger("Event loop stopped and closed successfully.", "DEBUG")
+                    state.logger("Event loop stopped and closed successfully.", "DEBUG")
 
             if self.api.websocket_thread is not None and self.api.websocket_thread.is_alive():
                 self.api.websocket_thread.join()
                 # logger.debug("WebSocket thread closed successfully.")
-                global_value.logger("WebSocket thread closed successfully.", "DEBUG")
+                state.logger("WebSocket thread closed successfully.", "DEBUG")
 
         except Exception as e:
             # logging.error(f"Error during disconnection: {e}")
-            global_value.logger("Error during disconnection: %s" % str(e), "ERROR")
+            state.logger("Error during disconnection: %s" % str(e), "ERROR")
 
     def connect(self):
         try:
@@ -103,7 +103,7 @@ class PocketOption:
 
         except Exception as e:
             # logging.error(f"Error connecting: {e}")
-            global_value.logger("Error connecting: %s" % str(e), "ERROR")
+            state.logger("Error connecting: %s" % str(e), "ERROR")
             return False
         return True
     
@@ -121,33 +121,33 @@ class PocketOption:
 
     @staticmethod
     def check_connect():
-        if global_value.websocket_is_connected == 0:
+        if state.websocket_is_connected == 0:
             return False
-        elif global_value.websocket_is_connected is None:
+        elif state.websocket_is_connected is None:
             return False
         else:
             return True
 
     @staticmethod
     def get_balance():
-        if global_value.balance_updated:
-            return global_value.balance
+        if state.balance_updated:
+            return state.balance
         else:
             return None
             
     @staticmethod
     def check_open():
-        return global_value.order_open
+        return state.order_open
         
     @staticmethod
     def check_order_closed(ido):
-        while ido not in global_value.order_closed:
+        while ido not in state.order_closed:
             time.sleep(0.1)
 
-        for pack in global_value.stat:
+        for pack in state.stat:
             if pack[0] == ido:
                # logger.debug('Closed Order',pack[1])
-               global_value.logger("Closed Order %s" % str(pack[1]), "DEBUG")
+               state.logger("Closed Order %s" % str(pack[1]), "DEBUG")
 
         return pack[0]
     
@@ -162,27 +162,27 @@ class PocketOption:
             else:
                 self.api.buy_multi_option[req_id]["id"] = None
         except Exception as e:
-            global_value.logger("Error initializing buy_multi_option: %s" % str(e), "ERROR")
+            state.logger("Error initializing buy_multi_option: %s" % str(e), "ERROR")
             return False, None
 
-        global_value.order_data = None
-        global_value.result = None
+        state.order_data = None
+        state.result = None
 
         self.api.buyv3(amount, active, action, expirations, req_id)
 
         start_t = time.time()
         while True:
-            if global_value.result is not None and global_value.order_data is not None:
+            if state.result is not None and state.order_data is not None:
                 break
             if time.time() - start_t >= 5:
-                if isinstance(global_value.order_data, dict) and "error" in global_value.order_data:
-                    global_value.logger(str(global_value.order_data["error"]), "ERROR")
+                if isinstance(state.order_data, dict) and "error" in state.order_data:
+                    state.logger(str(state.order_data["error"]), "ERROR")
                 else:
-                    global_value.logger("Unknown error occurred during purchase operation", "ERROR")
+                    state.logger("Unknown error occurred during purchase operation", "ERROR")
                 return False, None
             time.sleep(0.1)
 
-        return global_value.result, global_value.order_data.get("id", None)
+        return state.result, state.order_data.get("id", None)
 
     def check_win(self, id_number=None):
         if not id_number:
@@ -201,7 +201,7 @@ class PocketOption:
 
             if time.time() - start_t >= 180:
                 # logger.error("Timeout: Unable to retrieve order information in time.")
-                global_value.logger("Timeout: Unable to retrieve order information in time.", "ERROR")
+                state.logger("Timeout: Unable to retrieve order information in time.", "ERROR")
                 return None, "unknown"
 
             time.sleep(0.1)
@@ -211,7 +211,7 @@ class PocketOption:
             return order_info["profit"], status
         else:
             # logger.error("Invalid order information retrieved.")
-            global_value.logger("Invalid order information retrieved.", "ERROR")
+            state.logger("Invalid order information retrieved.", "ERROR")
             return None, "unknown"
 
     @staticmethod
@@ -299,9 +299,9 @@ class PocketOption:
                             if time_red < end_time:
                                 break
                 except Exception as e:
-                    global_value.logger(str(e), "ERROR")
+                    state.logger(str(e), "ERROR")
             all_candles = sorted(all_candles, key=lambda x: x["time"])
-            global_value.set_cache(global_value.pairs[active]["id"], all_candles)
+            state.set_cache(state.pairs[active]["id"], all_candles)
             return True
 
             if len(his['candles']) > 0:
@@ -313,18 +313,18 @@ class PocketOption:
                 h = {'time': hist[0], 'price': hist[1]}
                 c1.append(h)
             c1 = sorted(c1, key=lambda x: x["time"])
-            if active in global_value.pairs:
-                global_value.pairs[active]['history'] = c1
+            if active in state.pairs:
+                state.pairs[active]['history'] = c1
                 if len(c0) > 0:
                     df = pd.DataFrame(c0)
                     df = df.sort_values(by='time').reset_index(drop=True)
                     df['time'] = pd.to_datetime(df['time'], unit='s')
                     df.set_index('time', inplace=True)
                     df.reset_index(inplace=True)
-                    global_value.pairs[active]['dataframe'] = df
+                    state.pairs[active]['dataframe'] = df
 
         except:
-            global_value.logger("except get_candles", "DEBUG")
+            state.logger("except get_candles", "DEBUG")
             return False
 
     def get_candles(self, active, period, start_time=None, count=6000, count_request=3):
@@ -358,7 +358,7 @@ class PocketOption:
 
                 except Exception as e:
                     # logging.error(e)
-                    global_value.logger(str(e), "ERROR")
+                    state.logger(str(e), "ERROR")
             c0, c1 = [], []
             if period < 60 or count_request > 1:
                 time_red = int(datetime.now().timestamp())
@@ -386,7 +386,7 @@ class PocketOption:
 
                     except Exception as e:
                         # logger.error(e)
-                        global_value.logger(str(e), "ERROR")
+                        state.logger(str(e), "ERROR")
             if len(his['candles']) > 0:
                 for can in his['candles']:
                     c = {'time': can[0], 'open': can[1], 'high': can[3], 'low': can[4], 'close': can[2]}
@@ -396,17 +396,17 @@ class PocketOption:
                 h = {'time': hist[0], 'price': hist[1]}
                 c1.append(h)
             c1 = sorted(c1, key=lambda x: x["time"])
-            if active in global_value.pairs:
-                global_value.pairs[active]['history'] = c1
+            if active in state.pairs:
+                state.pairs[active]['history'] = c1
                 if len(c0) > 0:
                     df = pd.DataFrame(c0)
                     df = df.sort_values(by='time').reset_index(drop=True)
                     df['time'] = pd.to_datetime(df['time'], unit='s')
                     df.set_index('time', inplace=True)
                     df.reset_index(inplace=True)
-                    global_value.pairs[active]['dataframe'] = df
+                    state.pairs[active]['dataframe'] = df
             return True
 
         except:
-            global_value.logger("except get_candles", "DEBUG")
+            state.logger("except get_candles", "DEBUG")
             return False

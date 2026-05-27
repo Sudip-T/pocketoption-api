@@ -1,6 +1,6 @@
 import datetime, json, time
 from pocketoptionapi.ws.chanels.base import Base
-import pocketoptionapi.global_value as global_value
+import pocketoptionapi.state as state
 from pocketoptionapi.expiration import get_expiration_time
 
 
@@ -50,7 +50,7 @@ class Buyv3_by_raw_expired(Base):
                      "expired": int(expired),
                      "direction": direction.lower(),
                      "option_type_id": option_id,
-                     "user_balance_id": int(global_value.balance_id)
+                     "user_balance_id": int(state.balance_id)
                      },
             "name": "binary-options.open-option",
             "version": "1.0"

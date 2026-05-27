@@ -1,0 +1,303 @@
+Total Assets: 183
+============================================================
+
+Symbol: #AAPL
+  Name: Apple
+  Type: stock
+  ID: 5
+  OTC: False
+----------------------------------------
+Symbol: #AAPL_otc
+  Name: Apple OTC
+  Type: stock
+  ID: 170
+  OTC: True
+----------------------------------------
+Symbol: #AXP
+  Name: American Express
+  Type: stock
+  ID: 140
+  OTC: False
+----------------------------------------
+Symbol: #AXP_otc
+  Name: American Express OTC
+  Type: stock
+  ID: 291
+  OTC: True
+----------------------------------------
+Symbol: #BA
+  Name: Boeing Company
+  Type: stock
+  ID: 8
+  OTC: False
+----------------------------------------
+Symbol: #BA_otc
+  Name: Boeing Company OTC
+  Type: stock
+  ID: 292
+  OTC: True
+----------------------------------------
+Symbol: #CSCO
+  Name: Cisco
+  Type: stock
+  ID: 154
+  OTC: False
+----------------------------------------
+Symbol: #CSCO_otc
+  Name: Cisco OTC
+  Type: stock
+  ID: 427
+  OTC: True
+----------------------------------------
+Symbol: #FB
+  Name: FACEBOOK INC
+  Type: stock
+  ID: 177
+  OTC: False
+----------------------------------------
+Symbol: #FB_otc
+  Name: FACEBOOK INC OTC
+  Type: stock
+  ID: 187
+  OTC: True
+----------------------------------------
+Symbol: #INTC
+  Name: Intel
+  Type: stock
+  ID: 180
+  OTC: False
+----------------------------------------
+Symbol: #INTC_otc
+  Name: Intel OTC
+  Type: stock
+  ID: 190
+  OTC: True
+----------------------------------------
+Symbol: #JNJ
+  Name: Johnson & Johnson
+  Type: stock
+  ID: 144
+  OTC: False
+----------------------------------------
+Symbol: #JNJ_otc
+  Name: Johnson & Johnson OTC
+  Type: stock
+  ID: 296
+  OTC: True
+----------------------------------------
+Symbol: #JPM
+  Name: JPMorgan Chase & Co
+  Type: stock
+  ID: 20
+  OTC: False
+----------------------------------------
+Symbol: #MCD
+  Name: McDonald's
+  Type: stock
+  ID: 23
+  OTC: False
+----------------------------------------
+Symbol: #MCD_otc
+  Name: McDonald's OTC
+  Type: stock
+  ID: 175
+  OTC: True
+----------------------------------------
+Symbol: #MSFT
+  Name: Microsoft
+  Type: stock
+  ID: 24
+  OTC: False
+----------------------------------------
+Symbol: #MSFT_otc
+  Name: Microsoft OTC
+  Type: stock
+  ID: 176
+  OTC: True
+----------------------------------------
+Symbol: #PFE
+  Name: Pfizer Inc
+  Type: stock
+  ID: 147
+  OTC: False
+----------------------------------------
+Symbol: #PFE_otc
+  Name: Pfizer Inc OTC
+  Type: stock
+  ID: 297
+  OTC: True
+----------------------------------------
+Symbol: #TSLA
+  Name: Tesla
+  Type: stock
+  ID: 186
+  OTC: False
+----------------------------------------
+Symbol: #TSLA_otc
+  Name: Tesla OTC
+  Type: stock
+  ID: 196
+  OTC: True
+----------------------------------------
+Symbol: #XOM
+  Name: ExxonMobil
+  Type: stock
+  ID: 153
+  OTC: False
+----------------------------------------
+Symbol: #XOM_otc
+  Name: ExxonMobil OTC
+  Type: stock
+  ID: 426
+  OTC: True
+----------------------------------------
+Symbol: 100GBP
+  Name: 100GBP
+  Type: index
+  ID: 315
+  OTC: False
+----------------------------------------
+Symbol: 100GBP_otc
+  Name: 100GBP OTC
+  Type: index
+  ID: 403
+  OTC: True
+----------------------------------------
+Symbol: ADA-USD_otc
+  Name: Cardano OTC
+  Type: cryptocurrency
+  ID: 473
+  OTC: True
+----------------------------------------
+Symbol: AEDCNY_otc
+  Name: AED/CNY OTC
+  Type: currency
+  ID: 538
+  OTC: True
+----------------------------------------
+Symbol: AEX25
+  Name: AEX 25
+  Type: index
+  ID: 449
+  OTC: False
+----------------------------------------
+Symbol: AMD_otc
+  Name: Advanced Micro Devices OTC
+  Type: stock
+  ID: 568
+  OTC: True
+----------------------------------------
+Symbol: AMZN_otc
+  Name: Amazon OTC
+  Type: stock
+  ID: 412
+  OTC: True
+----------------------------------------
+Symbol: AUDCAD
+  Name: AUD/CAD
+  Type: currency
+  ID: 36
+  OTC: True
+----------------------------------------
+Symbol: AUDCAD_otc
+  Name: AUD/CAD OTC
+  Type: currency
+  ID: 67
+  OTC: True
+----------------------------------------
+Symbol: AUDCHF
+  Name: AUD/CHF
+  Type: currency
+  ID: 37
+  OTC: True
+----------------------------------------
+Symbol: AUDCHF_otc
+  Name: AUD/CHF OTC
+  Type: currency
+  ID: 68
+  OTC: True
+----------------------------------------
+Symbol: AUDJPY
+  Name: AUD/JPY
+  Type: currency
+  ID: 38
+  OTC: True
+----------------------------------------
+Symbol: AUDJPY_otc
+  Name: AUD/JPY OTC
+  Type: currency
+  ID: 69
+  OTC: True
+----------------------------------------
+Symbol: AUDNZD_otc
+  Name: AUD/NZD OTC
+  Type: currency
+  ID: 70
+  OTC: True
+----------------------------------------
+Symbol: AUDUSD
+  Name: AUD/USD
+  Type: currency
+  ID: 40
+  OTC: True
+----------------------------------------
+Symbol: AUDUSD_otc
+  Name: AUD/USD OTC
+  Type: currency
+  ID: 71
+  OTC: True
+----------------------------------------
+Symbol: AUS200
+  Name: AUS 200
+  Type: index
+  ID: 305
+  OTC: False
+----------------------------------------
+Symbol: AUS200_otc
+  Name: AUS 200 OTC
+  Type: index
+  ID: 306
+  OTC: True
+----------------------------------------
+Symbol: AVAX_otc
+  Name: Avalanche OTC
+  Type: cryptocurrency
+  ID: 481
+  OTC: True
+----------------------------------------
+Symbol: BABA
+  Name: Alibaba
+  Type: stock
+  ID: 183
+  OTC: False
+----------------------------------------
+Symbol: BABA_otc
+  Name: Alibaba OTC
+  Type: stock
+  ID: 428
+  OTC: True
+----------------------------------------
+Symbol: BCHEUR
+  Name: BCH/EUR
+  Type: cryptocurrency
+  ID: 450
+  OTC: False
+----------------------------------------
+Symbol: BCHGBP
+  Name: BCH/GBP
+  Type: cryptocurrency
+  ID: 451
+  OTC: False
+----------------------------------------
+Symbol: BCHJPY
+  Name: BCH/JPY
+  Type: cryptocurrency
+  ID: 452
+  OTC: False
+----------------------------------------
+Symbol: BHDCNY_otc
+  Name: BHD/CNY OTC
+  Type: currency
+  ID: 536
+  OTC: True
+----------------------------------------
