@@ -503,6 +503,9 @@ def wait_for(fn, timeout=15, poll=0.3, label=""):
     print(f"  [TIMEOUT] {label}")
     return False
 
+# Your SSID (replace with your own or use .env)
+YOUR_SSID = os.getenv('POCKET_SSID', 'YOUR_SSID_HERE')
+
 # ── Connect ───────────────────────────────────────────────────────────────────
 print("Connecting...")
 client = PocketOption(ssid=YOUR_SSID, demo=True)

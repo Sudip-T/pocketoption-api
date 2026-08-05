@@ -207,7 +207,7 @@ def example_save_assets_to_file():
                     if len(asset) > 4:
                         actives[symbol]['field4'] = asset[4]
                     if len(asset) > 5:
-                        actives[symbol]['field5'] = asset[5]
+                        actives[symbol]['payout'] = asset[5]
                     if len(asset) > 10:
                         actives[symbol]['pair_id'] = asset[10]
                     if len(asset) > 14:
